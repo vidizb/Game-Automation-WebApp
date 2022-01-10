@@ -13,7 +13,7 @@ import mediapipe as mp
 import time
 from PIL import Image
 import tempfile
-
+from bokeh.models.widgets import Div
 DEMO_IMAGE = 'demo.jpg'
 DEMO_VIDEO = 'test3.mp4'
 prevTime=0
@@ -78,8 +78,16 @@ width: 350px
 margin-left: -350px
 </style>
     """,unsafe_allow_html=True,)
+# if st.sidebar.button('Code'):
+#     webbrowser.open_new_tab(url)
+# link = '[GitHub](https://github.com/shashankanand13monu/Game-Automation)'
+# st.sidebar.markdown(link, unsafe_allow_html=True)
 if st.sidebar.button('Code'):
-    webbrowser.open_new_tab(url)
+    js = "window.open('https://github.com/shashankanand13monu/Game-Automation')"  # New tab or window
+    # js = "window.location.href = 'https://www.streamlit.io/'"  # Current tab
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)
 st.sidebar.title('Menu')
 
 st.sidebar.subheader('Settings')
