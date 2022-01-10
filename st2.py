@@ -124,7 +124,7 @@ if app_mode== 'About App':
     st.image('wsad.jpg',width=200)
     original_title = '<pre style="font-family:Aku & Kamu; color:#FD0101 ; font-size: 28px;font-weight:Bold">*NOTE</pre>'
     st.markdown(original_title, unsafe_allow_html=True)
-    original_title= '''<pre style="font-family:Aku & Kamu; color:#270F40; font-size: 24px;">
+    original_title= '''<pre style="font-family:Aku & Kamu; color:#FD0160 ; font-size: 24px;">
     Video Option will Experience Lag in  Browsers.
     If It's <strong>Lagging</strong> just <strong>Reload</strong> & Choose your option <strong>ASAP</strong> 
     eg: <strong>Choosing Max Hands</strong> or <strong>Using Webcam.</strong> 
