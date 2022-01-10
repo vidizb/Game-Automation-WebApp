@@ -199,7 +199,7 @@ elif app_mode == 'Run on Image':
     # st.sidebar.text('Demo Image')
     st.sidebar.subheader('Demo Images')
     # st.sidebar.image('WIN_20211106_14_34_25_Pro.jpg')
-    st.sidebar.image('360_F_61499604_hkfPSZ4ZYs47Yp8H780DEb3I3cvWjdmH.jpg')  
+    st.sidebar.image('dddemo.jpg')  
     st.sidebar.image('Screenshot 2022-01-09 161732.png')
     st.sidebar.image('woman-showing-four-fingers-white-background-woman-showing-four-fingers-white-background-closeup-hand-134504006.jpg')
 
