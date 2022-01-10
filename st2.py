@@ -14,8 +14,8 @@ import time
 from PIL import Image
 import tempfile
 
-DEMO_IMAGE = 'Pictures\demo.jpg'
-DEMO_VIDEO = 'Pictures\test3.mp4'
+DEMO_IMAGE = 'demo.jpg'
+DEMO_VIDEO = 'test3.mp4'
 prevTime=0
 currTime=0 
 tipIds= [4,8,12,16,20]
@@ -136,7 +136,7 @@ if app_mode== 'About App':
     st.markdown(original_title, unsafe_allow_html=True)
     # st.subheader('''W - 5 Fingers''')
     # st.subheader('S - Fist\n A - 2 or 3 Fingers\n D - 4 Fingers')
-    st.image('Pictures\wsad.jpg',width=200)
+    st.image('wsad.jpg',width=200)
     original_title = '<pre style="font-family:Aku & Kamu; color:#FD0101 ; font-size: 28px;font-weight:Bold">*NOTE</pre>'
     st.markdown(original_title, unsafe_allow_html=True)
     original_title= '''<pre style="font-family:Aku & Kamu; color:#270F40; font-size: 24px;">
@@ -187,8 +187,8 @@ elif app_mode == 'Run on Image':
         # opencv_image = cv2.imdecode(file_bytes, 1)
         # image = opencv_image.copy()
         # image= np.array(Image.open(demo_image))
-        image = 'Pictures\demo.jpg'
-        cap = cv2.imread('Pictures\demo.jpg', cv2.IMREAD_UNCHANGED)
+        image = 'demo.jpg'
+        cap = cv2.imread('demo.jpg', cv2.IMREAD_UNCHANGED)
         image = cap.copy()
 
     # st.sidebar.text('Input Image')
@@ -199,14 +199,14 @@ elif app_mode == 'Run on Image':
     # st.sidebar.text('Demo Image')
     st.sidebar.subheader('Demo Images')
     # st.sidebar.image('WIN_20211106_14_34_25_Pro.jpg')
-    st.sidebar.image('Pictures\dddemo.jpg')  
+    st.sidebar.image('360_F_61499604_hkfPSZ4ZYs47Yp8H780DEb3I3cvWjdmH.jpg')  
     st.sidebar.image('Screenshot 2022-01-09 161732.png')
     st.sidebar.image('woman-showing-four-fingers-white-background-woman-showing-four-fingers-white-background-closeup-hand-134504006.jpg')
 
-    st.sidebar.image('Pictures\demo.jpg')
+    st.sidebar.image('demo.jpg')
     hand_count =0
     image = cv2.cvtColor(image,cv2.COLOR_RGB2BGR)
-    cap = cv2.imread('Pictures\demo.jpg', cv2.IMREAD_UNCHANGED)
+    cap = cv2.imread('demo.jpg', cv2.IMREAD_UNCHANGED)
     # xxx= image
     # xxx= f'{image}'
     # IMAGE_FILE.append(xxx)
@@ -280,7 +280,7 @@ elif app_mode == 'Run on Image':
                     # st.markdown('---')
                     
                     
-                    overlay = cv2.imread('Pictures\istockphoto-1179377734-612x612.jpg')
+                    overlay = cv2.imread('istockphoto-1179377734-612x612.jpg')
                     overlay = cv2.resize(overlay,(100,100))
                     x_offset = 80
                     y_offset = 10
@@ -292,7 +292,7 @@ elif app_mode == 'Run on Image':
                     # st.text('Right')
                     original_title = '<p style="font-family:Arial Black; color:#FD0177; font-size: 30px;">Right</p>'
                     st.markdown(original_title, unsafe_allow_html=True)
-                    overlay = cv2.imread('Pictures\istockphoto-1179377734-612x612 (4).jpg')
+                    overlay = cv2.imread('istockphoto-1179377734-612x612 (4).jpg')
                     overlay = cv2.resize(overlay,(100,100))
                     x_offset = 120
                     y_offset = 50
@@ -304,7 +304,7 @@ elif app_mode == 'Run on Image':
                     # st.text('Left')
                     original_title = '<p style="font-family:Arial Black; color:#FD0177; font-size: 30px;">Left</p>'
                     st.markdown(original_title, unsafe_allow_html=True)
-                    overlay = cv2.imread('Pictures\istockphoto-1179377734-612x612 (1).jpg')
+                    overlay = cv2.imread('istockphoto-1179377734-612x612 (1).jpg')
                     overlay = cv2.resize(overlay,(100,100))
                     x_offset = 50
                     y_offset = 50
@@ -316,7 +316,7 @@ elif app_mode == 'Run on Image':
                     # st.text('Brake')
                     original_title = '<p style="font-family:Arial Black; color:#FD0177; font-size: 30px;">Brake</p>'
                     st.markdown(original_title, unsafe_allow_html=True)
-                    overlay = cv2.imread('Pictures\istockphoto-1179377734-612x612 (3).jpg')
+                    overlay = cv2.imread('istockphoto-1179377734-612x612 (3).jpg')
                     overlay = cv2.resize(overlay,(100,100))
                     x_offset = 50
                     y_offset = 90
