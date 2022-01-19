@@ -389,7 +389,9 @@ elif app_mode == 'Run On Video':
     st.markdown('---')
     st.subheader("Video Hangs in Browser works fine Locally like this : ")   
     data= 'sample.mp4'
+    dat2= 'https://youtu.be/UT7gjebls4A'
     st.video(data, format="video/mp4", start_time=0)
+    st.video(dat2)
     # video_file = open('sample.mp4', 'rb')
     # video_bytes = video_file.read()
     # drawing_spec = mp_drawing.DrawingSpec(thickness=1, circle_radius=1)
