@@ -386,7 +386,13 @@ elif app_mode == 'Run On Video':
         kpi3_text = st.markdown("0")
     st.markdown ("<hr/>", unsafe_allow_html=True)
     st.subheader('Reload , if webpage hangs')
-    drawing_spec = mp_drawing.DrawingSpec(thickness=1, circle_radius=1)
+    st.markdown('---')
+    st.subheader("Video Hangs in Browser works fine Locally like this : ")   
+    data= 'sample.mp4'
+    st.video(data, format="video/mp4", start_time=0)
+    # video_file = open('sample.mp4', 'rb')
+    # video_bytes = video_file.read()
+    # drawing_spec = mp_drawing.DrawingSpec(thickness=1, circle_radius=1)
         
     with mp_hand.Hands(max_num_hands=max_hands,min_detection_confidence=detection_confidence,
                        min_tracking_confidence=tracking_confidence) as hands:
@@ -470,11 +476,18 @@ elif app_mode == 'Run On Video':
             image = image_resize(image = image, width = 320,height=360)
             stframe.image(image, channels = 'BGR', use_column_width=False)
     st.subheader('Output Image')
+    
+    # st.video('streamlit-st2-2022-01-11-23-01-57.webm')
+    # sample= 'streamlit-st2-2022-01-11-23-01-57.webm'
+    # sampl= sample.read()
+    # st.video(sampl)
     st.text('Video Processed')
     output_video = open('output1.mp4','rb')
     out_bytes= output_video.read()
     st.video(out_bytes)
-        
+    
+
+    st.video(video_bytes) 
     vid.release()
     out.release()
  
